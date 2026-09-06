@@ -1,0 +1,170 @@
+/* Header */
+.header{
+    position: relative;
+    padding: 10px 0;
+}
+
+.header .d-flex{
+    flex-direction: row;
+}
+
+.nav-link{
+    color: var(--color-black);
+    position: relative;    
+}
+
+.nav-link:hover{
+    color: var(--color-accent);
+    transition: color 0.3s ease;
+}
+
+.nav-menu{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 97px;
+    left: 0;
+    background: var(--color-light);
+    width: 100%;    
+    padding: 20px 0;
+    gap: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.nav-toggle{
+    font-size: 20px;
+    margin-right: 0px;
+}
+
+/* Hero Section */
+.hero-section{
+    position: relative;
+    overflow: hidden;
+    background: var(--color-light);
+}
+
+.eyebrow-text{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.eyebrow-text i{
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.hero-section h1{
+    margin: 22px 0 24px;
+}
+
+.hero-section h1 strong{
+    color: var(--color-accent);
+}
+
+.hero-section p{    
+    margin: 0 0 32px;
+}
+
+.hero-visual {
+    position: relative;    
+}
+
+.hero-visual > img {
+    position: relative; 
+    width: 82%;   
+    max-width: 300px; 
+    animation: heroImageFloat 5s ease-in-out infinite;
+}
+
+.hero-visual::before {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.035);
+    filter: blur(45px);
+    z-index: 0;
+}
+
+.floating-card{
+    position: absolute;    
+    padding: 9px 11px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.10);
+    font-size: 10px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.floating-card i{
+    font-size: 12px;
+    margin-right: 9px;
+}
+
+.card-performance{
+    top: 8%;
+    left: 0;
+    animation: floatOne 4s ease-in-out infinite;
+}
+
+.card-seo{
+    top: 30%;
+    right: 0;
+    animation: floatTwo 4s ease-in-out infinite;
+}
+
+.card-conversion{
+    bottom: 8%;
+    left: 2%;
+    animation: floatThree 4s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes floatOne {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes floatTwo {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+@keyframes floatThree {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes heroImageFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
