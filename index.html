@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development Company in Bangalore - Web Design Services</title>
+    <title>Growth Marketing Agency in Bangalore - Digital Marketing</title>
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- Custom CSS -->
+    <!-- Custom CSS -->    
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,416 +21,294 @@
 <body>
 
     <!-- Header Section -->
-    <header class="header">
-        <div class="container d-flex">
-            <div class="logo">
-                <a href="./index.html"><img src="images/logo.webp" alt="Crafting Genius Logo" width="70px" height="70px"></a>
-            </div>
-            <nav class="navbar d-flex">   
-                <button class="nav-toggle">
+    <header class="site-header">
+        <div class="container header-container">            
+            <a href="./index.html" class="logo"><img src="images/logo-white.webp" alt="Crafting Genius Logo"></a>            
+            <nav class="main-nav" aria-label="Main Navigation">       
+                <button class="navmenu-open" type="button" aria-label="Open Navigation" aria-expanded="false">
                     <i class="fa-solid fa-bars"></i>
-                </button>             
-                <ul class="nav-menu d-flex">
-                    <li><a href="#about" class="nav-link">About</a></li>
+                </button>    
+                <div class="menu-overlay"></div>                                              
+                <ul class="nav-menu">                    
+                    <li><a href="./index.html" class="nav-link active">Home</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#why-us" class="nav-link">Why Us</a></li>
-                    <li><a href="#process" class="nav-link">Process</a></li>
-                    <li><a href="#faq" class="nav-link">FAQs</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <a href="tel:+918970115533"class="btn head-btn">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
-            </nav>            
-        </div>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                    <li><a href="#" class="nav-link">Insights</a></li>
+                </ul>                
+            </nav> 
+            <a href="tel:+918970115533" class="btn header-btn">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>           
+        </div>                 
     </header>
 
     <main>
 
         <!-- Hero Section -->
-        <section class="hero-section section-padding">
-            <div class="container d-flex">
+        <section class="hero-section">
+            <div class="hero-grid"></div>
+            <div class="hero-glow hero-glow-one"></div>
+            <div class="hero-glow hero-glow-two"></div>
+            <div class="container hero-container">                
                 <div class="hero-content">
-                    <span class="eyebrow-text"><i class="fa-solid fa-minus"></i> Website Design & Development</span>
-                    <h1>Websites that look great. Built to <strong>grow your business.</strong></h1>
-                    <p>We design and develop fast, strategic, conversion-focused websites that turn your digital presence into a powerful growth engine.</p>
-                    <a href="#contact" class="btn hero-btn">Start your Project <i class="fa-solid fa-arrow-right"></i></a>
-                </div>  
+                    <div class="hero-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span>Growth • Brand • Digital</span>
+                    </div>
+                    <h1 class="hero-title">Your growth<span>deserves</span><strong>to stand out.</strong></h1>
+                    <p class="hero-description">We build ambitious brands through strategy, creativity and digital experiences that move businesses forward.</p>
+
+                    <div class="hero-actions">
+                        <a href="mailto:varun@craftinggenius.in" class="btn hero-btn hero-primary">Start a conversation <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#work" class="btn hero-btn hero-secondary">Explore our work <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
                 <div class="hero-visual">
-                    <img src="images/hero-img.png" alt="Website that grow your Business Illustration">
-                    <div class="floating-card card-performance">
-                        <i class="fa-solid fa-bolt"></i> 
-                        <span>Fast Performance</span>
-                    </div>
-                    <div class="floating-card card-seo">
-                        <i class="fa-solid fa-arrow-trend-up"></i> 
-                        <span>SEO Ready</span>
-                    </div>
-                    <div class="floating-card card-conversion">
-                        <i class="fa-solid fa-circle-check"></i> 
-                        <span>Conversion Focused</span>
+                    <div class="visual-orange-circle"></div>
+                    <div class="visual-outline"></div>
+                    <div class="visual-word">Growth</div>
+                    <div class="hero-person">
+                        <img src="images/hero-image.webp" alt="Person Image">
                     </div>                                       
-                </div>              
-            </div>
-        </section>        
-
+                </div>
+            </div>            
+        </section>  
+        
         <!-- About Section -->
-        <section id="about" class="about-section section-padding">
-            <div class="container">
-                <div class="about-content">
-                    <small class="eyebrow-text">About us</small>
-                    <h2>Your website shouldn't just exist. It should work.</h2>
-                    <p>At Crafting Genius, we combine strategy, design, technology and SEO to build websites that do more than look good.</p>
-                    <p>Every website is designed around your audience, business goals and growth opportunities — from the first interaction to the final conversion.</p>
-                    <a class="btn abt-btn">More About Crafting Genius <i class="fa-solid fa-arrow-right"></i></a>
+        <section class="about-section section-padding" id="about">
+            <div class="container about-container">
+                <div class="section-header">
+                    <span class="section-label">Who We Are</span>              
+                    <h2>We craft ideas into <span>brands that move </span>businesses forward.</h2>
+                    <p>We blend strategy, creativity, and technology to turn bold ideas into meaningful brands that connect with people and drive real business growth.</p>
                 </div>
-                <div class="about-image">
-                    <img src="images/about-img.jpg" alt="People Working with laptop">
-                    <div class="counter-section">
-                        <div class="counter">
-                            <strong class="counter-number">10+</strong>
-                            <p>years experience</p>
-                        </div>
-                        <div class="counter">
-                            <strong class="counter-number">100%</strong>
-                            <p>client satisfaction</p>
-                        </div>
-                        <div class="counter">
-                            <strong class="counter-number">100+</strong>
-                            <p>projects delivered</p>
-                        </div>
+                <div class="about-grid">
+                    <div class="about-visual">
+                        <img src="images/about-team.jpg" alt="Crafting Genius creative team">                               
+                    </div>
+                    <div class="about-content">
+                        <p class="about-lead">Strategy. Creativity. Technology. Growth.</p>
+                        <p>At Crafting Genius, we bring together strategy, creativity, technology and marketing to help ambitious businesses build stronger brands and achieve meaningful growth.</p>
+                        <p>From brand strategy and identity to digital experiences and marketing, we create solutions that look great, work beautifully and are built around real business objectives.</p>
+                        <a href="#" class="btn abt-btn">Discover Our Story <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Why Us Section -->
-        <section id="why-us" class="why-us-section section-padding">
-            <div class="container">
-                <div class="why-us-content">
-                    <h2>Why businesses choose Crafting Genius</h2>
-                    <div class="card-section">
-                        <div class="card">
-                            <span class="card-number">01</span>
-                            <h3 class="card-heading">Strategy First</h3>
-                            <p class="card-description">We don't start with colors and layouts. We start with your business goals, audience and competition.</p>
-                        </div>
-                        <div class="card">
-                            <span class="card-number">02</span>
-                            <h3 class="card-heading">Designed to Convert</h3>
-                            <p class="card-description">Every section has a purpose — attract, engage, build trust or convert.</p>
-                        </div>
-                        <div class="card">
-                            <span class="card-number">03</span>
-                            <h3 class="card-heading">Built for Performance</h3>
-                            <p class="card-description">Fast-loading, responsive and technically optimized websites.</p>
-                        </div>
-                        <div class="card">
-                            <span class="card-number">04</span>
-                            <h3 class="card-heading">SEO-Ready</h3>
-                            <p class="card-description">Clean architecture and SEO-friendly foundations built into the website.</p>
-                        </div>
-                        <div class="card">
-                            <span class="card-number">05</span>
-                            <h3 class="card-heading">Built to Scale</h3>
-                            <p class="card-description">Your website can evolve as your business grows.</p>
-                        </div>
-                    </div>
+        <!-- Stats Section -->
+        <section class="stats-section section-padding" id="work">
+            <div class="container stats-container">
+                <div class="section-header">
+                    <span class="section-label">By The Numbers</span>
+                    <h2>Built to make an <span>impact.</span></h2>
+                    <p>Every project is driven by purpose, creativity, and measurable results—turning ideas into experiences that make a lasting impact.</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="services-section section-padding">
-            <div class="container">
-                <h2>Everything you need to build a better digital presence.</h2>
-                <div class="service-tabs">
-                    <button class="tab-btn active"><i class="fa-solid fa-laptop-code"></i> Business Websites</button>
-                    <button class="tab-btn"><i class="fa-solid fa-cart-shopping"></i> E-Commerce Development</button>
-                    <button class="tab-btn"><i class="fa-solid fa-window-maximize"></i> Landing Pages</button>
-                    <button class="tab-btn"><i class="fa-solid fa-screwdriver-wrench"></i> Website Maintenance</button>
-                    <button class="tab-btn"><i class="fa-solid fa-server"></i> Hosting and Performance</button>
-
-                    <div id="business-websites" class="tab-content active">
-                        <h3>Informational Website Design & Development</h3>
-                        <p>We design stunning, professional, and responsive websites that clearly communicate value and build trust.</p>
-                        <ul>
-                            <li><i class="fa-regular fa-circle-check"></i> Corporate website design</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Business website development</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Custom WordPress websites</li>
-                            <li><i class="fa-regular fa-circle-check"></i> SEO friendly website structure</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Responsive & mobile friendly</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Speed-optimised fast websites</li>
-                        </ul>
-                        <a href="#contact" class="btn service-btn">Get Started <i class="fa fa-arrow-right"></i></a>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">
+                            <span class="counter" data-target="300">0</span><sup>+</sup>
+                        </div>
+                        <p>Projects Delivered</p>
                     </div>
-                    <div id="ecommerce-websites" class="tab-content">
-                        <h3>E-Commerce Website Development</h3>
-                        <p>we create secure, scalable, and conversion-optimised online stores.</p>
-                        <ul>
-                            <li><i class="fa-regular fa-circle-check"></i> WooCommerce website development</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Shopify store design & development</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Product catalogue setup</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Payment gateway integration</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Checkout optimisation</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Ecommerce SEO setup</li>
-                        </ul>
-                        <a href="#contact" class="btn service-btn">Get Started <i class="fa fa-arrow-right"></i></a>
+                    <div class="stat-item">
+                        <div class="stat-number">
+                            <span class="counter" data-target="16">0</span><sup>+</sup>
+                        </div>
+                        <p>Industries Served</p>
                     </div>
-                    <div id="landing-page" class="tab-content">
-                        <h3>Landing Page Design & Development</h3>
-                        <p>Every landing page is crafted to capture attention, reduce friction, and drive conversions.</p>
-                        <ul>
-                            <li><i class="fa-regular fa-circle-check"></i> Conversion-focused landing pages</li>
-                            <li><i class="fa-regular fa-circle-check"></i> UI UX optimised layouts</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Mobile first landing pages</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Fast loading page development</li>
-                            <li><i class="fa-regular fa-circle-check"></i> SEO friendly landing pages</li>
-                        </ul>
-                        <a href="#contact" class="btn service-btn">Get Started <i class="fa fa-arrow-right"></i></a>
-                    </div>
-                    <div id="website-maintenance" class="tab-content">
-                        <h3>Website Maintenance & Support</h3>
-                        <p>we ensure your website needs ongoing care to stay competitive and long-term performance.</p>
-                        <ul>
-                            <li><i class="fa-regular fa-circle-check"></i> WordPress maintenance</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Website updates & backups</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Security monitoring</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Performance optimisation</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Content updates</li>
-                        </ul>
-                        <a href="#contact" class="btn service-btn">Get Started <i class="fa fa-arrow-right"></i></a>
-                    </div>
-                    <div id="website-hosting" class="tab-content">
-                        <h3>Website Hosting Services</h3>
-                        <p>Our hosting solutions are built for speed, uptime, and security.</p>
-                        <ul>
-                            <li><i class="fa-regular fa-circle-check"></i> Managed WordPress hosting</li>
-                            <li><i class="fa-regular fa-circle-check"></i> High-performance cloud hosting</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Secure website hosting</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Website speed optimisation</li>
-                            <li><i class="fa-regular fa-circle-check"></i> SSL & security setup</li>
-                        </ul>
-                        <a href="#contact" class="btn service-btn">Get Started <i class="fa fa-arrow-right"></i></a>
+                    <div class="stat-item">
+                        <div class="stat-number">
+                            <span class="counter" data-target="75">0</span><sup>+</sup>
+                        </div>
+                        <p>Years of Experience</p>
                     </div>                    
+                    <div class="stat-item">
+                        <div class="stat-number">
+                            <span class="counter" data-target="12">0</span><sup>+</sup>
+                        </div>
+                        <p>Years in Digital Stratosphere</p>
+                    </div>                    
+                </div>                             
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section class="services-section section-padding" id="services">
+            <div class="container services-container">
+                <div class="section-header">
+                    <span class="section-label">What We Do</span>
+                    <h2>Creative solutions<br> that make brands <span>grow.</span></h2>
+                    <p>From building your brand identity to creating digital experiences, we help businesses turn ideas into impact.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <span class="service-number">01</span>
+                        <div class="service-content">
+                            <h3>Brand Strategy & Identity</h3> 
+                            <p>Build a strong and memorable brand identity that connects with your audience.</p> 
+                            <a href="#" class="btn service-btn">Explore service <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-number">02</span>
+                        <div class="service-content">
+                            <h3>Website Design & Development</h3> 
+                            <p>Fast, responsive and conversion-focused websites designed around your business goals.</p> 
+                            <a href="#" class="btn service-btn">Explore service <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-number">03</span>
+                        <div class="service-content">
+                            <h3>Digital Marketing</h3> 
+                            <p>Reach the right audience through strategic digital campaigns and content.</p> 
+                            <a href="#" class="btn service-btn">Explore service <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-number">04</span>
+                        <div class="service-content">
+                            <h3>Sales & Growth Consulting</h3> 
+                            <p>Turn opportunities into measurable growth with practical sales and business strategies.</p> 
+                            <a href="#" class="btn service-btn">Explore service <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        
+        <!-- Partners Section -->
+        <section class="trusted-section section-padding">
+            <div class="container trusted-container">
+                <div class="section-header">
+                    <span class="section-label">Trusted by</span>
+                    <h2>Trusted by brands <span>that think bigger.</span></h2>
+                    <p>From ambitious startups to established businesses, we help brands turn ideas into meaningful growth.</p>
+                </div>
+                <div class="trusted-logos">
+                    <div class="trusted-logo"><img src="images/client-1.webp" alt="Rasta Logo"></div>
+                    <div class="trusted-logo"><img src="images/client-2.webp" alt="Infosys Finacle Logo"></div>
+                    <div class="trusted-logo"><img src="images/client-3.webp" alt="BCIC Logo"></div>
+                    <div class="trusted-logo"><img src="images/client-4.webp" alt="RBIH Logo"></div>
+                    <div class="trusted-logo"><img src="images/client-5.webp" alt="Thoughtworks Logo"></div>
+                    <div class="trusted-logo"><img src="images/client-6.webp" alt="Landmark Group Logo"></div>
+                    <div class="trusted-logo"><img src="images/client-7.webp" alt="Novo Nordisk Logo"></div>
                 </div>
             </div>
         </section>
 
-        <!-- Process Section -->
-        <section id="process" class="process-section section-padding">
-            <div class="container">
-                <h2>From first idea to final launch.</h2>
-                <div class="process-timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-number">01</div>
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-heading">
-                            <h3>Discovery & Research</h3>
+        <!-- Testimonials Section -->
+        <section class="testimonials-section section-padding" id="testimonial-slider">
+            <div class="container testimonials-container">
+                <div class="section-header">
+                    <span class="section-label">Testimonials</span>
+                    <h2>What our clients <span>say about us.</span></h2>
+                    <p>We believe great work is measured by the impact it creates. Here's what some of our clients have to say about working with Crafting Genius.</p>
+                </div>
+                <div class="testimonial-slider">
+                    <div class="testimonial-item">
+                        <div class="tesimonial-text">
+                            <p>Crafting Genius has been incredible for our social media post designs! Their team consistently delivers creative, on-brand visuals that capture attention and drive engagement. They truly understand our brand’s style and messaging, making each post feel cohesive and impactful. Their responsiveness and attention to detail make working with them a breeze. Highly recommend Crafting Genius for anyone looking to elevate their social media presence with eye-catching designs!</p>                            
+                        </div>
+                        <div class="testimonial-client">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="client-name">Kushal Barua</div>
                         </div>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-number">02</div>
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-heading">
-                            <h3>Strategy & Structure</h3>
+                    <div class="testimonial-item">
+                        <div class="tesimonial-text">
+                            <p>Our website revamp consultation with Varun was truly transformative! He took the time to understand our vision and provided strategic recommendations to enhance functionality, design, and user experience. His expertise and creative approach gave us a clear direction for creating a more impactful online presence. We highly recommend Crafting Genius for anyone seeking professional guidance on a website revamp!</p>                            
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-number">03</div>
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-heading">
-                            <h3>Design (UI/UX)</h3>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-number">04</div>
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-heading">
-                            <h3>Development</h3>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-number">05</div>
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-heading">
-                            <h3>Launch & Optimization</h3>
+                        <div class="testimonial-client">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="client-name">Aryan Maheshwari</div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Industries Section -->
-        <section class="industries-section section-padding">
-            <div class="container">
-                <h2>Built for different businesses. Designed around yours.</h2>
-                <div class="industry-grid">
-                    <div class="industry-card">
-                        <img src="images/hospitality.jpg" alt="Restaurant and Hotel">
-                        <h3>Hospitality</h3>
-                    </div>
-                    <div class="industry-card">
-                        <img src="images/healthcare.jpg" alt="Healthcare">
-                        <h3>Healthcare</h3>
-                    </div>
-                    <div class="industry-card">
-                        <img src="images/real-estate.jpg" alt="Real Estate Property">
-                        <h3>Real Estate</h3>
-                    </div>
-                    <div class="industry-card">
-                        <img src="images/education.jpg" alt="Lecture and Students">
-                        <h3>Education</h3>
-                    </div>
-                    <div class="industry-card">
-                        <img src="images/ecommerce.jpg" alt="Shopping mall">
-                        <h3>Retail & E-Commerce</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="faq-section section-padding">
-            <div class="container">
-                <h2>Questions? We've got answers.</h2>
-                <div class="faq-content">
-                    <details class="faq-item">
-                        <summary>How much does website development cost in Bangalore?</summary>
-                        <p>Website development cost depends on scope, features, and platform. Informational websites typically cost less than e-commerce or custom builds. A professional web development company in Bangalore focuses on ROI, not just price.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>How long does it take to build a website?</summary>
-                        <p>Most websites take 3-6 weeks depending on complexity, content readiness, and integrations. E-commerce and custom website development in Bangalore projects may take longer.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Do you provide SEO with website design?</summary>
-                        <p>Yes. All our websites feature responsive web design in Bangalore, built with an SEO friendly structure, fast speed, and optimised content to support organic growth from day one.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Will my website be mobile-friendly?</summary>
-                        <p>Absolutely. Every website we build is responsive, mobile friendly, and optimised for all screen sizes</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Which platform is best — WordPress or Shopify?</summary>
-                        <p>WordPress is ideal for informational and content-driven websites. Shopify is best for scalable e-commerce. We help you choose based on business goals.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Can you redesign my existing website?</summary>
-                        <p>Yes, we offer comprehensive website redesign services to modernize your online presence and improve user experience.</p>
-                    </details>
-                </div>
+                <a href="https://maps.app.goo.gl/wriSctwWZdpkPMSy9" target="_blank" class="btn testimonial-btn">View Google Reviews <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </section>
 
         <!-- CTA Section -->
         <section class="cta-section section-padding">
-            <div class="container">
-                <h3>Have a website project in mind?</h3>
-                <p>Tell us what you're building. We'll help you figure out the best way forward.</p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn cta-btn">Start a Project <i class="fa fa-arrow-right"></i></a>
-                    <a href="tel:+918970115533" class="btn cta-btn">Book a Consultation <i class="fa fa-arrow-right"></i></a>
-                </div> 
-                <small>No pressure. Just a conversation about your goals.</small>               
+            <div class="container cta-container">
+                <div class="section-header">
+                    <span class="section-label">Have a project in mind?</span>
+                    <h2>Let’s create <span>what’s next.</span></h2>
+                    <p>From bold ideas to meaningful digital experiences, let’s build something that makes your brand impossible to ignore.</p>
+                    <a href="tel:+918970115533" class="btn cta-btn">Start a Conversation <i class="fa-solid fa-arrow-right"></i></a>
+                </div>                
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section section-padding">
-            <div class="container">
-                <div class="contact-form">
-                    <h2>Let's talk about your project.</h2>
-                    <form action="#" method="POST" autocomplete="on">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Your email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company" placeholder="Your company name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="website">Website</label>
-                            <input type="url" id="website" name="website" placeholder="https://yourwebsite.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="requirements">Project Requirements</label>
-                            <textarea id="requirements" name="requirements" rows="6" placeholder="Tell us about your project..." required></textarea>
-                        </div>
-                        <input type="submit" value="Send Enquiry" class="btn submit-btn">
-                    </form>
-                </div>
-                <div class="contact-details">
-                    <strong>Crafting Genius</strong>
-                    <p>Address: #32, 5th Main Road, Tatanagar, Bangalore, India, 560092</p>
-                    <p>Email: <a href="mailto:varun@craftinggenius.in">varun@craftinggenius.in</a></p>
-                    <p>Phone: <a href="tel:+918970115533">089701 15533</a></p>                    
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.671612372295!2d77.57093067484288!3d13.05656258726667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1736b26c6505%3A0x9d936ae38c1ff306!2sCrafting%20Genius%20Branding%20%26%20Digital%20Marketing%20Agency!5e0!3m2!1sen!2sin!4v1788348257335!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                </div>
-            </div>
-        </section>
+        </section> 
     </main>        
     
     <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <h3>Crafting digital experiences that move businesses forward.</h3>
-            <div class="footer-content"> 
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top">
                 <div class="footer-column">
-                    <h4>Company</h4>
-                    <ul class="footer-column">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Insights</a></li>                        
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Services</h4>
-                    <ul class="footer-column">
-                        <li><a href="#">Website Design</a></li>
-                        <li><a href="#">Website Development</a></li>
-                        <li><a href="#">E-Commerce</a></li>                        
-                        <li><a href="#">Landing Pages</a></li>
-                        <li><a href="#">Maintenance</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Explore</h4>
-                    <ul class="footer-column">
-                        <li><a href="#">Branding</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">Sales Consulting</a></li>                                       
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <a href="/index.html"><img src="images/logo.webp" alt="Crafting Genius Logo"></a>
-                    <p>Crafting Genius is a full-service brand communication and digital marketing agency that your business needs in order to succeed in today’s competitive age.</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/company/craftinggenius/" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://www.facebook.com/TheGeniusEdge/" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/craftinggenius/" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
+                    <div class="footer-brand">
+                        <a href="./index.html" class="logo footer-logo"><img src="images/logo-white.webp" alt="Crafting Genius Logo"></a>
+                        <p>We craft ideas into brands, experiences, and digital solutions that move businesses forward.</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/company/craftinggenius/" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.facebook.com/TheGeniusEdge/" target="_blank" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/craftinggenius/" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <div class="footer-column">
+                    <span class="footer-heading">Explore</span>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#work">Work</a></li>                        
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Insights</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <span class="footer-heading">Services</span>
+                    <ul class="footer-links">
+                        <li><a href="#">Branding</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Website Design</a></li>                        
+                        <li><a href="#">Website Development</a></li>
+                        <li><a href="#">Sales Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <span class="footer-heading">Contact</span>
+                    <p><i class="fa-solid fa-map"></i> #32, 5th Main Road, Tatanagar, Bangalore, India, 560092</p>
+                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:varun@craftinggenius.in">varun@craftinggenius.in</a></p>
+                    <p><i class="fa-solid fa-phone"></i> <a href="tel:+918970115533">089701 15533</a></p>
+                </div>
             </div>
-            <div class="footer-copyright">
-                <p>&copy; 2026 Crafting Genius. All Rights Reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Crafting Genius. All rights reserved.</p>
             </div>
         </div>
     </footer>
     
+    <script src="custom.js"></script>
+
 </body>
 </html>
